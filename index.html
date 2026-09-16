@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rohit Panchal – Software Engineer</title>
+<meta name="description" content="Rohit Panchal is a software engineer at Krishify building the backend, Google Cloud infrastructure and production AI behind an agritech platform used by 9M+ farmers.">
+<link rel="canonical" href="https://rohitpanchal.com/">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rohit Panchal – Software Engineer">
+<meta property="og:description" content="Backend architecture, Google Cloud infrastructure and production AI for an agritech platform used by 9M+ farmers.">
+<meta property="og:url" content="https://rohitpanchal.com/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231A73E8'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial,sans-serif' font-size='36' font-weight='700' fill='%23fff'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<script>
+  // Theme: saved choice, else system preference. Runs before paint to avoid a flash.
+  (function () {
+    document.documentElement.classList.remove('no-js');
+    var t = null;
+    try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (t !== 'light' && t !== 'dark') {
+      t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rohit Panchal",
+  "jobTitle": "Software Engineer",
+  "worksFor": {"@type": "Organization", "name": "Krishify"},
+  "email": "mailto:rohitxofficial@gmail.com",
+  "url": "https://rohitpanchal.com/",
+  "sameAs": ["https://linkedin.com/in/rohittpanchal"],
+  "address": {"@type": "PostalAddress", "addressLocality": "New Delhi", "addressCountry": "IN"},
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "Guru Gobind Singh Indraprastha University"}
+}
+</script>
+<style>
+:root {
+  --font: "Google Sans", "Product Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --bg: #FFFFFF;
+  --bg-2: #F8F9FA;
+  --surface: #FFFFFF;
+  --surface-2: #F1F3F4;
+  --text: #202124;
+  --text-2: #5F6368;
+  --text-3: #80868B;
+  --border: #DADCE0;
+  --blue: #1A73E8;
+  --blue-strong: #1967D2;
+  --blue-50: #E8F0FE;
+  --blue-100: #D2E3FC;
+  --green: #1E8E3E;
+  --green-50: #E6F4EA;
+  --red: #D93025;
+  --red-50: #FCE8E6;
+  --yellow: #F9AB00;
+  --yellow-50: #FEF7E0;
+  --on-filled: #FFFFFF;
+  --g-blue: #4285F4;
+  --g-red: #EA4335;
+  --g-yellow: #FBBC04;
+  --g-green: #34A853;
+  --shadow-1: 0 1px 2px rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+  --shadow-2: 0 1px 3px rgba(60,64,67,.3), 0 4px 8px 3px rgba(60,64,67,.15);
+  --shadow-search: 0 1px 6px rgba(32,33,36,.28);
+  --radius: 16px;
+  --radius-lg: 28px;
+  --ease: cubic-bezier(.2, 0, 0, 1);
+}
+[data-theme="dark"] {
+  --bg: #202124;
+  --bg-2: #292A2D;
+  --surface: #303134;
+  --surface-2: #3C4043;
+  --text: #E8EAED;
+  --text-2: #9AA0A6;
+  --text-3: #80868B;
+  --border: #5F6368;
+  --blue: #8AB4F8;
+  --blue-strong: #AECBFA;
+  --blue-50: #394457;
+  --blue-100: #45526B;
+  --green: #81C995;
+  --green-50: #2C4A36;
+  --red: #F28B82;
+  --red-50: #4A3230;
+  --yellow: #FDD663;
+  --yellow-50: #4A4330;
+  --on-filled: #202124;
+  --shadow-1: 0 1px 2px rgba(0,0,0,.5), 0 1px 3px 1px rgba(0,0,0,.3);
+  --shadow-2: 0 1px 3px rgba(0,0,0,.5), 0 4px 8px 3px rgba(0,0,0,.3);
+  --shadow-search: 0 1px 6px rgba(0,0,0,.6);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+  transition: background-color .25s var(--ease), color .25s var(--ease);
+}
+h1, h2, h3, h4 { margin: 0; font-weight: 500; line-height: 1.2; letter-spacing: -0.01em; }
+p { margin: 0; }
+a { color: var(--blue); }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 4px; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip { position: absolute; left: -999px; top: 0; background: var(--blue); color: var(--on-filled); padding: .5rem 1rem; border-radius: 0 0 8px 8px; }
+.skip:focus { left: 1rem; top: 0; z-index: 100; }
+svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+/* App bar */
+.appbar { position: sticky; top: 0; z-index: 40; background: var(--bg); transition: box-shadow .2s, background-color .25s; }
+.appbar.scrolled { box-shadow: 0 1px 2px rgba(60,64,67,.15), 0 2px 6px 2px rgba(60,64,67,.08); }
+[data-theme="dark"] .appbar.scrolled { box-shadow: 0 1px 2px rgba(0,0,0,.5); }
+.appbar-inner { display: flex; align-items: center; gap: 1rem; height: 64px; }
+.logo { display: inline-flex; align-items: baseline; font-size: 1.25rem; font-weight: 500; color: var(--text); text-decoration: none; letter-spacing: -0.01em; }
+.logo-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--g-blue); margin-left: 3px; }
+.nav { margin-left: 1.5rem; }
+.nav ul { display: flex; gap: .25rem; list-style: none; margin: 0; padding: 0; }
+.nav a { display: inline-block; padding: .5rem .85rem; border-radius: 20px; color: var(--text-2); text-decoration: none; font-weight: 500; font-size: .95rem; }
+.nav a:hover { background: var(--surface-2); color: var(--text); }
+.appbar-actions { margin-left: auto; display: flex; align-items: center; gap: .5rem; }
+.icon-btn { width: 40px; height: 40px; border-radius: 50%; border: 0; background: transparent; color: var(--text-2); display: inline-grid; place-items: center; cursor: pointer; }
+.icon-btn:hover { background: var(--surface-2); color: var(--text); }
+.icon-btn .icon { width: 22px; height: 22px; }
+.menu-btn { display: none; }
+[data-theme="dark"] .ico-sun { display: block; }
+[data-theme="dark"] .ico-moon { display: none; }
+.ico-sun { display: none; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: .5rem; height: 44px; padding: 0 1.4rem; border-radius: 22px; font: 500 .95rem/1 var(--font); text-decoration: none; border: 1px solid transparent; cursor: pointer; white-space: nowrap; transition: background-color .2s, box-shadow .2s; }
+.btn .icon { width: 18px; height: 18px; }
+.btn-filled { background: var(--blue); color: var(--on-filled); }
+.btn-filled:hover { background: var(--blue-strong); box-shadow: var(--shadow-1); }
+.btn-tonal { background: var(--blue-50); color: var(--blue-strong); }
+.btn-tonal:hover { background: var(--blue-100); }
+.btn-outlined { border-color: var(--border); color: var(--blue); background: transparent; }
+.btn-outlined:hover { background: var(--blue-50); }
+
+/* Hero */
+.hero { padding: 4.5rem 0 5rem; }
+.hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 3.5rem; align-items: center; }
+.hero h1 { font-size: clamp(2.2rem, 4.8vw, 3.6rem); font-weight: 500; letter-spacing: -0.02em; line-height: 1.12; }
+.hero h1 .hi { display: block; color: var(--text-2); font-weight: 400; font-size: .55em; letter-spacing: 0; margin-bottom: .5rem; }
+.hero-sub { margin-top: 1.25rem; font-size: 1.15rem; color: var(--text-2); max-width: 34rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
+
+/* Site search */
+.search { position: relative; margin-top: 2rem; max-width: 36rem; }
+.search-box { display: flex; align-items: center; gap: .75rem; height: 50px; padding: 0 .75rem 0 1.1rem; border: 1px solid var(--border); border-radius: 25px; background: var(--surface); transition: box-shadow .2s, border-color .2s; }
+.search-box .icon { color: var(--text-3); width: 22px; height: 22px; }
+.search-box:hover, .search:focus-within .search-box { box-shadow: var(--shadow-search); border-color: transparent; }
+.search input { flex: 1; min-width: 0; border: 0; background: transparent; font: 1.05rem var(--font); color: var(--text); outline: none; }
+.search input::placeholder { color: var(--text-3); }
+.search-go { height: 36px; padding: 0 1rem; border-radius: 18px; border: 0; background: var(--surface-2); color: var(--text); font: 500 .9rem var(--font); cursor: pointer; }
+.search-go:hover { background: var(--blue-50); color: var(--blue-strong); }
+.search-hint { margin-top: .6rem; font-size: .85rem; color: var(--text-3); padding-left: 1.1rem; }
+.search-hint button { border: 0; background: transparent; color: var(--blue); font: inherit; cursor: pointer; padding: 0; }
+.search-hint button:hover { text-decoration: underline; }
+.search-results { position: absolute; left: 0; right: 0; top: 56px; background: var(--surface); border-radius: 16px; box-shadow: var(--shadow-2); padding: .5rem 0; margin: 0; list-style: none; z-index: 30; display: none; }
+.search.open .search-results { display: block; }
+.search-results li a { display: flex; align-items: center; gap: .75rem; padding: .6rem 1.1rem; color: var(--text); text-decoration: none; }
+.search-results li a:hover, .search-results li[aria-selected="true"] a { background: var(--surface-2); }
+.search-results .icon { width: 20px; height: 20px; color: var(--text-3); }
+.search-results .kind { margin-left: auto; font-size: .8rem; color: var(--text-3); }
+.search-results .empty { padding: .6rem 1.1rem; color: var(--text-2); }
+.flash { animation: flash 1.6s var(--ease); }
+@keyframes flash { 0% { box-shadow: 0 0 0 0 rgba(26,115,232,.55); } 100% { box-shadow: 0 0 0 14px rgba(26,115,232,0); } }
+
+/* Metric cards */
+.metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+[data-theme="dark"] .card { border-color: transparent; }
+.metric { padding: 1.25rem 1.25rem 1.1rem; display: flex; flex-direction: column; gap: .35rem; min-height: 150px; opacity: 0; transform: translateY(14px); }
+.metric.in { opacity: 1; transform: none; transition: opacity .6s var(--ease), transform .6s var(--ease); }
+.metric .l { font-size: .9rem; color: var(--text-2); }
+.metric .v { font-size: 2rem; font-weight: 500; letter-spacing: -0.02em; line-height: 1.1; }
+.metric .v small { font-size: 1rem; font-weight: 400; color: var(--text-2); letter-spacing: 0; }
+.metric .c { font-size: .85rem; color: var(--text-3); margin-top: auto; }
+.metric svg.viz { display: block; width: 100%; height: 44px; margin-top: .35rem; }
+.metric .green { color: var(--green); }
+.metric.ring { display: grid; grid-template-columns: 1fr auto; align-items: center; column-gap: .75rem; }
+.metric.ring .txt { display: flex; flex-direction: column; gap: .35rem; }
+.gauge { width: 72px; height: 72px; transform: rotate(-90deg); }
+.gauge .track { fill: none; stroke: var(--surface-2); stroke-width: 8; }
+.gauge .arc { fill: none; stroke: var(--green); stroke-width: 8; stroke-linecap: round; }
+.metric ul { margin: .25rem 0 0; padding: 0; list-style: none; display: grid; gap: .3rem; font-size: .95rem; }
+.metric ul b { font-weight: 500; }
+
+/* Sections */
+.section { padding: 5rem 0; }
+.section-alt { background: var(--bg-2); }
+.section-head { max-width: 46rem; margin-bottom: 2.5rem; }
+.section-head h2 { font-size: clamp(1.9rem, 3.6vw, 2.5rem); font-weight: 400; letter-spacing: -0.015em; }
+.section-head p { margin-top: .85rem; font-size: 1.1rem; color: var(--text-2); }
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .55s var(--ease), transform .55s var(--ease); }
+.reveal.in { opacity: 1; transform: none; }
+.no-js .reveal, .no-js .metric { opacity: 1; transform: none; }
+
+/* About */
+.pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+.pillar { padding: 1.5rem; display: flex; flex-direction: column; gap: .75rem; }
+.pillar .badge { width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; }
+.pillar .badge.blue { background: var(--blue-50); color: var(--blue); }
+.pillar .badge.green { background: var(--green-50); color: var(--green); }
+.pillar .badge.yellow { background: var(--yellow-50); color: var(--yellow); }
+.pillar .badge.red { background: var(--red-50); color: var(--red); }
+.pillar h3 { font-size: 1.15rem; }
+.pillar p { color: var(--text-2); }
+
+/* Projects */
+.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; }
+.project { display: flex; flex-direction: column; overflow: hidden; transition: box-shadow .2s var(--ease), transform .2s var(--ease); }
+.project:hover { box-shadow: var(--shadow-2); transform: translateY(-2px); }
+.project-art { height: 168px; display: grid; place-items: center; overflow: hidden; }
+.project-art svg { width: 100%; height: 100%; display: block; }
+.art-blue { background: var(--blue-50); }
+.art-green { background: var(--green-50); }
+.art-red { background: var(--red-50); }
+.art-yellow { background: var(--yellow-50); }
+.art-grey { background: var(--surface-2); }
+.project-body { padding: 1.25rem 1.5rem 1.5rem; display: flex; flex-direction: column; gap: .75rem; flex: 1; }
+.project h3 { font-size: 1.3rem; }
+.project .lead { color: var(--text); }
+.project .detail { color: var(--text-2); font-size: .95rem; }
+.mchips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.mchip { display: inline-flex; align-items: center; font-size: .85rem; font-weight: 500; padding: .3rem .7rem; border-radius: 8px; background: var(--green-50); color: var(--green); }
+.mchip.blue { background: var(--blue-50); color: var(--blue-strong); }
+.mchip.yellow { background: var(--yellow-50); color: #B06000; }
+[data-theme="dark"] .mchip.yellow { color: var(--yellow); }
+.project .tech { margin-top: auto; padding-top: .5rem; font-size: .88rem; color: var(--text-3); }
+
+/* Wide (last) project card */
+@media (min-width: 64.01em) {
+  .project.wide { grid-column: 1 / -1; flex-direction: row; }
+  .project.wide .project-art { width: 34%; height: auto; min-height: 220px; flex: none; }
+  .project.wide .project-body { padding: 1.75rem 2rem; }
+  .project.wide .detail { max-width: 44rem; }
+}
+
+/* Experience */
+.timeline { list-style: none; margin: 0; padding: 0 0 0 2rem; position: relative; }
+.timeline::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--border); border-radius: 2px; }
+.timeline li { position: relative; padding: 0 0 2.25rem; }
+.timeline li:last-child { padding-bottom: 0; }
+.timeline li::before { content: ""; position: absolute; left: -2rem; top: 6px; width: 16px; height: 16px; border-radius: 50%; background: var(--g-blue); box-shadow: 0 0 0 4px var(--bg); }
+.timeline li:nth-child(2)::before { background: var(--g-green); }
+.timeline li:nth-child(3)::before { background: var(--g-yellow); }
+.timeline .when { font-size: .9rem; color: var(--text-2); font-weight: 500; }
+.timeline h3 { font-size: 1.2rem; margin-top: .25rem; }
+.timeline p { color: var(--text-2); margin-top: .35rem; max-width: 40rem; }
+.exp-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: start; }
+.exp-side { display: grid; gap: 1rem; }
+.exp-side .card { padding: 1.5rem; }
+.exp-side h3 { font-size: 1.05rem; }
+.exp-side p { color: var(--text-2); margin-top: .4rem; font-size: .95rem; }
+.exp-side .big { font-size: 2rem; font-weight: 500; letter-spacing: -0.02em; margin-top: .25rem; }
+
+/* Skills */
+.skill-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; align-items: start; }
+.skill-group { padding: 1.5rem; }
+.skill-group h3 { font-size: 1.05rem; margin-bottom: .85rem; display: flex; align-items: center; gap: .6rem; }
+.skill-group h3 .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.chip { display: inline-flex; align-items: center; height: 32px; padding: 0 .85rem; border: 1px solid var(--border); border-radius: 8px; font-size: .9rem; color: var(--text); background: var(--surface); }
+[data-theme="dark"] .chip { background: var(--surface-2); border-color: transparent; }
+
+/* Contact */
+.contact-card { background: var(--blue-50); border-radius: var(--radius-lg); padding: 3rem; display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center; }
+.contact-card h2 { font-size: clamp(1.9rem, 3.6vw, 2.5rem); font-weight: 400; letter-spacing: -0.015em; }
+.contact-card p { margin-top: .85rem; color: var(--text-2); font-size: 1.1rem; max-width: 30rem; }
+.contact-actions { display: grid; gap: .75rem; max-width: 22rem; margin-left: auto; }
+.contact-actions .btn { justify-content: center; }
+[data-theme="dark"] .contact-card .btn-outlined { border-color: var(--border); }
+
+/* Footer */
+.footer { padding: 2.5rem 0 3rem; border-top: 1px solid var(--border); }
+.footer-inner { display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center; justify-content: space-between; color: var(--text-2); font-size: .9rem; }
+.footer a { color: var(--text-2); text-decoration: none; margin-right: 1.25rem; }
+.footer a:hover { color: var(--text); text-decoration: underline; }
+.footer .stripe { display: inline-flex; gap: 4px; margin-right: .75rem; vertical-align: middle; }
+.footer .stripe span { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+
+/* Responsive */
+@media (max-width: 64em) {
+  .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero { padding: 3rem 0 4rem; }
+  .exp-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .contact-card { grid-template-columns: 1fr; padding: 2.25rem; }
+  .contact-actions { margin-left: 0; }
+}
+@media (max-width: 52em) {
+  .nav ul { display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--surface); padding: .5rem .75rem 1rem; box-shadow: var(--shadow-2); }
+  .nav.open ul { display: flex; }
+  .nav a { display: block; padding: .8rem 1rem; border-radius: 12px; font-size: 1.05rem; }
+  .menu-btn { display: inline-grid; }
+  .appbar .btn-filled { display: none; }
+  .section { padding: 3.5rem 0; }
+  .metrics { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 30em) {
+  .metrics { grid-template-columns: 1fr; }
+  .hero-actions .btn { flex: 1; justify-content: center; }
+  .search-go { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal, .metric { opacity: 1; transform: none; transition: none; }
+  .project, .btn, .search-box, body { transition: none; }
+  .project:hover { transform: none; }
+  .flash { animation: none; box-shadow: 0 0 0 3px var(--blue); }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.8-3.8"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 19h14"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.6-7.95A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></symbol>
+  <symbol id="i-hub" viewBox="0 0 24 24"><circle cx="12" cy="6" r="2.5"/><circle cx="5" cy="17" r="2.5"/><circle cx="19" cy="17" r="2.5"/><path d="M10.8 8.2 6.4 15M13.2 8.2l4.4 6.8M7.5 17h9"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 2.5v6c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5v-6z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.6L19.5 10.5l-5.6 1.9L12 18l-1.9-5.6L4.5 10.5l5.6-1.9z"/><path d="M19 17l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></symbol>
+  <symbol id="i-open" viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M19 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l9 9-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></symbol>
+</svg>
+
+<header class="appbar" id="appbar">
+  <div class="container appbar-inner">
+    <a class="logo" href="#top">Rohit Panchal<span class="logo-dot" aria-hidden="true"></span></a>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="appbar-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch colour theme">
+        <svg class="icon ico-moon"><use href="#i-moon"/></svg>
+        <svg class="icon ico-sun"><use href="#i-sun"/></svg>
+      </button>
+      <a class="btn btn-filled" href="mailto:rohitxofficial@gmail.com">Get in touch</a>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <svg class="icon"><use href="#i-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1><span class="hi">Hi, I'm Rohit.</span>I build the systems behind an agritech platform used by 9M+ farmers.</h1>
+        <p class="hero-sub">Software engineer at Krishify. Backend architecture, Google Cloud infrastructure and production AI, shipped for enterprise clients across India.</p>
+        <div class="hero-actions">
+          <a class="btn btn-filled" href="mailto:rohitxofficial@gmail.com"><svg class="icon"><use href="#i-mail"/></svg>Get in touch</a>
+          <a class="btn btn-tonal" href="resume.pdf"><svg class="icon"><use href="#i-download"/></svg>Download résumé</a>
+        </div>
+
+        <form class="search" id="search" role="search" autocomplete="off">
+          <label class="visually-hidden" for="q">Search this site</label>
+          <div class="search-box">
+            <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+            <input id="q" type="search" placeholder="Search my work" aria-autocomplete="list" aria-controls="results" aria-expanded="false">
+            <button class="search-go" type="submit">Search</button>
+          </div>
+          <ul class="search-results" id="results" role="listbox" aria-label="Results"></ul>
+          <p class="search-hint">Try <button type="button" data-q="ceres">ceres</button>, <button type="button" data-q="cloud cost">cloud cost</button> or <button type="button" data-q="security">security</button></p>
+        </form>
+      </div>
+
+      <div class="hero-visual" aria-label="Key numbers">
+        <div class="metrics">
+          <div class="card metric" id="m1">
+            <span class="l">Monthly cloud spend</span>
+            <span class="v green"><span data-count="62.5" data-decimals="1" data-prefix="−" data-suffix="%">−0%</span></span>
+            <svg class="viz" viewBox="0 0 200 44" preserveAspectRatio="none" aria-hidden="true">
+              <g fill="var(--g-blue)" opacity=".9">
+                <rect x="2" y="2" width="12" height="42" rx="2"/><rect x="18" y="4" width="12" height="40" rx="2"/><rect x="34" y="3" width="12" height="41" rx="2"/><rect x="50" y="8" width="12" height="36" rx="2"/><rect x="66" y="14" width="12" height="30" rx="2"/><rect x="82" y="19" width="12" height="25" rx="2"/><rect x="98" y="24" width="12" height="20" rx="2"/><rect x="114" y="27" width="12" height="17" rx="2"/><rect x="130" y="28" width="12" height="16" rx="2"/><rect x="146" y="27" width="12" height="17" rx="2"/><rect x="162" y="28" width="12" height="16" rx="2"/><rect x="178" y="27" width="12" height="17" rx="2"/>
+              </g>
+            </svg>
+            <span class="c">INR 12L to 4.5L a month, about $100K a year</span>
+          </div>
+          <div class="card metric ring" id="m2">
+            <div class="txt">
+              <span class="l">Availability</span>
+              <span class="v"><span data-count="99.9" data-decimals="1" data-suffix="%">0%</span></span>
+              <span class="c">Past 12 months, through 5× seasonal spikes</span>
+            </div>
+            <svg class="gauge" viewBox="0 0 72 72" aria-hidden="true">
+              <circle class="track" cx="36" cy="36" r="30"/>
+              <circle class="arc" id="arc" cx="36" cy="36" r="30" stroke-dasharray="188.5" stroke-dashoffset="188.5"/>
+            </svg>
+          </div>
+          <div class="card metric" id="m3">
+            <span class="l">p95 API latency</span>
+            <span class="v"><span data-count="800" data-decimals="0">0</span> <small>ms, from 1.6 s</small></span>
+            <svg class="viz" viewBox="0 0 200 44" preserveAspectRatio="none" aria-hidden="true">
+              <polyline fill="none" stroke="var(--g-red)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" points="2,6 20,9 38,7 56,12 74,10 92,22 110,30 128,34 146,33 164,35 182,34 198,35"/>
+            </svg>
+            <span class="c">Query plans, indexing, pooling and Redis caching</span>
+          </div>
+          <div class="card metric" id="m4">
+            <span class="l">Platform</span>
+            <ul>
+              <li><b>9M+</b> farmers on the app</li>
+              <li><b>1.5M</b> monthly active users</li>
+              <li><b>10+</b> enterprise tenants</li>
+              <li><b>~10M</b> requests a day</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Four years, one platform, the whole stack</h2>
+        <p>I joined Krishify as an intern in 2022 and now own its backend, cloud infrastructure and applied AI, with a four-engineer team I lead the technical design for. The platform serves farmers, field operators and enterprise agri-businesses, so the work spans everything from Postgres query plans to LLM evals.</p>
+      </div>
+      <div class="pillars">
+        <div class="card pillar reveal">
+          <span class="badge blue"><svg class="icon"><use href="#i-hub"/></svg></span>
+          <h3>Backend architecture</h3>
+          <p>APIs, schemas and services behind the farmer app, operator app and a multi-tenant B2B platform handling around 10M requests a day.</p>
+        </div>
+        <div class="card pillar reveal">
+          <span class="badge green"><svg class="icon"><use href="#i-cloud"/></svg></span>
+          <h3>Google Cloud and DevOps</h3>
+          <p>Built the GCP platform from scratch on Terraform: GKE, Cloud SQL, ArgoCD GitOps and self-service pipelines with under 10-minute lead time.</p>
+        </div>
+        <div class="card pillar reveal">
+          <span class="badge yellow"><svg class="icon"><use href="#i-sparkle"/></svg></span>
+          <h3>Applied AI</h3>
+          <p>LLM products in production, from a natural-language analytics agent with its own eval harness to multilingual voice-bot prototypes.</p>
+        </div>
+        <div class="card pillar reveal">
+          <span class="badge red"><svg class="icon"><use href="#i-shield"/></svg></span>
+          <h3>Security</h3>
+          <p>CrowdStrike across the clusters, a hardened Android-to-backend edge, and the infrastructure controls behind ISO 27001 readiness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Things I've built</h2>
+        <p>Production systems, with the numbers they moved.</p>
+      </div>
+      <div class="projects">
+
+        <article class="card project reveal" id="p-ceres">
+          <div class="project-art art-blue" aria-hidden="true">
+            <svg viewBox="0 0 320 168">
+              <rect x="40" y="38" width="150" height="44" rx="22" fill="#fff"/>
+              <circle cx="66" cy="60" r="5" fill="var(--g-blue)"/><rect x="80" y="55" width="90" height="10" rx="5" fill="#DADCE0"/>
+              <rect x="120" y="94" width="160" height="50" rx="22" fill="var(--g-blue)"/>
+              <rect x="140" y="112" width="10" height="18" rx="2" fill="#fff"/><rect x="156" y="104" width="10" height="26" rx="2" fill="#fff"/><rect x="172" y="118" width="10" height="12" rx="2" fill="#fff"/><rect x="188" y="100" width="10" height="30" rx="2" fill="#fff"/>
+              <path d="M262 22l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="var(--g-yellow)"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>Ceres</h3>
+            <p class="lead">A natural-language analytics agent over production farm data.</p>
+            <p class="detail">Client teams ask questions in plain English instead of waiting on a dashboard. Streaming FastAPI and Pydantic AI backend, React chat UI, a provider-agnostic LLM layer, and a 150-case regression-eval harness that runs on every change.</p>
+            <div class="mchips"><span class="mchip">~92% query accuracy</span><span class="mchip blue">2 enterprise clients</span><span class="mchip blue">~120 weekly users</span></div>
+            <p class="tech">FastAPI, Pydantic AI, React, Claude API, PostgreSQL</p>
+          </div>
+        </article>
+
+        <article class="card project reveal" id="p-tenant">
+          <div class="project-art art-grey" aria-hidden="true">
+            <svg viewBox="0 0 320 168">
+              <g fill="#fff">
+                <rect x="60" y="30" width="44" height="44" rx="10"/><rect x="112" y="30" width="44" height="44" rx="10"/><rect x="164" y="30" width="44" height="44" rx="10"/><rect x="216" y="30" width="44" height="44" rx="10"/>
+                <rect x="60" y="94" width="44" height="44" rx="10"/><rect x="112" y="94" width="44" height="44" rx="10"/><rect x="164" y="94" width="44" height="44" rx="10"/><rect x="216" y="94" width="44" height="44" rx="10"/>
+              </g>
+              <rect x="60" y="30" width="44" height="44" rx="10" fill="var(--g-blue)"/>
+              <rect x="164" y="30" width="44" height="44" rx="10" fill="var(--g-red)"/>
+              <rect x="112" y="94" width="44" height="44" rx="10" fill="var(--g-yellow)"/>
+              <rect x="216" y="94" width="44" height="44" rx="10" fill="var(--g-green)"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>Multi-tenant SaaS platform</h3>
+            <p class="lead">One platform for AVT McCormick, AB InBev, Swiggy, Rallis India and more.</p>
+            <p class="detail">Designed and shipped the architecture: service boundaries, tenant-aware database routing, and shared-versus-dedicated deployment tiers that balance data isolation against operating cost.</p>
+            <div class="mchips"><span class="mchip">Onboarding 4 weeks to under 5 days</span><span class="mchip blue">10+ tenants</span></div>
+            <p class="tech">Django REST Framework, PostgreSQL, Redis, Celery, GKE</p>
+          </div>
+        </article>
+
+        <article class="card project reveal" id="p-gcp">
+          <div class="project-art art-green" aria-hidden="true">
+            <svg viewBox="0 0 320 168">
+              <path d="M96 128a26 26 0 0 1-4-51.6A42 42 0 0 1 172 66a30 30 0 0 1-2 62z" fill="#fff"/>
+              <g fill="var(--g-red)"><rect x="196" y="40" width="16" height="88" rx="3"/><rect x="218" y="56" width="16" height="72" rx="3"/></g>
+              <g fill="var(--g-yellow)"><rect x="240" y="80" width="16" height="48" rx="3"/></g>
+              <g fill="var(--g-green)"><rect x="262" y="100" width="16" height="28" rx="3"/><rect x="284" y="104" width="16" height="24" rx="3"/></g>
+              <path d="M110 100l24-18 20 8 30-30" fill="none" stroke="var(--g-blue)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>Google Cloud platform and cost reduction</h3>
+            <p class="lead">Infrastructure from scratch, then 62.5% cheaper.</p>
+            <p class="detail">A multi-project, multi-region Terraform monorepo provisioning GKE and Cloud SQL. Consolidated the AWS, Azure and GCP estates onto GCP, retired 7 redundant services, rightsized everything, and rebuilt the BigQuery-to-RDS pipelines.</p>
+            <div class="mchips"><span class="mchip">INR 12L to 4.5L a month</span><span class="mchip blue">Under 10-min deploy lead time</span></div>
+            <p class="tech">Terraform, GKE, Cloud SQL, ArgoCD, Bitbucket Pipelines, Cloud Armor</p>
+          </div>
+        </article>
+
+        <article class="card project reveal" id="p-reliability">
+          <div class="project-art art-blue" aria-hidden="true">
+            <svg viewBox="0 0 320 168">
+              <path d="M20 118 C60 118 70 60 100 60 S140 118 170 118 S210 60 240 60 S280 118 300 118" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+              <path d="M20 118 C60 118 70 60 100 60 S140 118 170 118 S210 60 240 60 S280 118 300 118" fill="none" stroke="var(--g-blue)" stroke-width="4" stroke-linecap="round"/>
+              <g fill="#fff" stroke="var(--g-green)" stroke-width="4"><circle cx="100" cy="60" r="8"/><circle cx="240" cy="60" r="8"/></g>
+              <path d="M40 40h48M40 52h30" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>Reliability and performance</h3>
+            <p class="lead">Stateless services that absorb the season.</p>
+            <p class="detail">Re-architected the backend as autoscaled GKE workloads with health probes and graceful shutdown, tuned Postgres and caching through 3× workload growth, and migrated Python 3.7 to 3.11 and Django 2.2 to 5.2 with zero incidents.</p>
+            <div class="mchips"><span class="mchip">99.9% availability</span><span class="mchip">p95 1.6 s to 800 ms</span><span class="mchip blue">~60% fewer DB connections</span></div>
+            <p class="tech">Django, PostgreSQL, Redis, Kubernetes, Prometheus, Grafana</p>
+          </div>
+        </article>
+
+        <article class="card project reveal" id="p-security">
+          <div class="project-art art-red" aria-hidden="true">
+            <svg viewBox="0 0 320 168">
+              <path d="M160 24l56 20v40c0 36-24 60-56 70-32-10-56-34-56-70V44z" fill="#fff"/>
+              <path d="M160 40l40 14v30c0 26-17 44-40 52-23-8-40-26-40-52V54z" fill="var(--g-red)"/>
+              <path d="M142 90l12 12 26-26" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="40" y="110" width="40" height="28" rx="6" fill="#fff"/><path d="M48 110v-8a12 12 0 0 1 24 0v8" fill="none" stroke="#fff" stroke-width="6"/>
+              <rect x="240" y="40" width="40" height="28" rx="6" fill="#fff"/><path d="M248 40v-8a12 12 0 0 1 24 0v8" fill="none" stroke="#fff" stroke-width="6"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>Security engineering</h3>
+            <p class="lead">Runtime protection and a hardened API edge for 9M users.</p>
+            <p class="detail">CrowdStrike Falcon across the GKE clusters with admission control and image assessment at the registry. Android-to-backend hardening: TLS enforcement, certificate pinning that survives cert-manager rotation, Google Play Integrity, HMAC request signing and Cloud Armor WAF.</p>
+            <div class="mchips"><span class="mchip">100% runtime coverage</span><span class="mchip yellow">ISO 27001 readiness</span></div>
+            <p class="tech">CrowdStrike Falcon, cert-manager, Cloud Armor, Play Integrity</p>
+          </div>
+        </article>
+
+        <article class="card project reveal" id="p-ml">
+          <div class="project-art art-yellow" aria-hidden="true">
+            <svg viewBox="0 0 320 168">
+              <g>
+                <rect x="60" y="34" width="24" height="24" rx="4" fill="#A8CB69"/><rect x="88" y="34" width="24" height="24" rx="4" fill="#4E9F5A"/><rect x="116" y="34" width="24" height="24" rx="4" fill="#0F6A3A"/><rect x="144" y="34" width="24" height="24" rx="4" fill="#4E9F5A"/>
+                <rect x="60" y="62" width="24" height="24" rx="4" fill="#D7C27C"/><rect x="88" y="62" width="24" height="24" rx="4" fill="#A8CB69"/><rect x="116" y="62" width="24" height="24" rx="4" fill="#4E9F5A"/><rect x="144" y="62" width="24" height="24" rx="4" fill="#0F6A3A"/>
+                <rect x="60" y="90" width="24" height="24" rx="4" fill="#C2A57C"/><rect x="88" y="90" width="24" height="24" rx="4" fill="#D7C27C"/><rect x="116" y="90" width="24" height="24" rx="4" fill="#A8CB69"/><rect x="144" y="90" width="24" height="24" rx="4" fill="#4E9F5A"/>
+                <rect x="60" y="118" width="24" height="24" rx="4" fill="#C2A57C"/><rect x="88" y="118" width="24" height="24" rx="4" fill="#C2A57C"/><rect x="116" y="118" width="24" height="24" rx="4" fill="#D7C27C"/><rect x="144" y="118" width="24" height="24" rx="4" fill="#A8CB69"/>
+              </g>
+              <g transform="translate(228 50) rotate(20)">
+                <rect x="-16" y="-12" width="32" height="24" rx="4" fill="#fff"/>
+                <rect x="-60" y="-8" width="40" height="16" rx="3" fill="var(--g-blue)"/><rect x="20" y="-8" width="40" height="16" rx="3" fill="var(--g-blue)"/>
+              </g>
+              <path d="M228 84v18M212 128h32" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 8"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>Recommendations and satellite crop insights</h3>
+            <p class="lead">ML for farmers: a personalised feed and harvest prediction from orbit.</p>
+            <p class="detail">A feed recommendation system validated in a 90-day A/B test, four user-segmentation personas for targeted campaigns, and Google Earth Engine pipelines using NDVI, NDWI and LAI to predict harvest dates and crop disease, delivered through the Farmwise backend.</p>
+            <div class="mchips"><span class="mchip">Click-through 1.3% to 4%</span><span class="mchip">+75% campaign conversion</span><span class="mchip blue">±5-day harvest accuracy</span></div>
+            <p class="tech">Google Earth Engine, BigQuery, Python, Django REST Framework</p>
+          </div>
+        </article>
+
+        <article class="card project wide reveal" id="p-voice">
+          <div class="project-art art-grey" aria-hidden="true">
+            <svg viewBox="0 0 320 168">
+              <g fill="var(--g-blue)">
+                <rect x="70" y="70" width="10" height="28" rx="5"/><rect x="88" y="52" width="10" height="64" rx="5"/><rect x="106" y="38" width="10" height="92" rx="5"/><rect x="124" y="60" width="10" height="48" rx="5"/><rect x="142" y="30" width="10" height="108" rx="5"/><rect x="160" y="66" width="10" height="36" rx="5"/><rect x="178" y="46" width="10" height="76" rx="5"/><rect x="196" y="72" width="10" height="24" rx="5"/><rect x="214" y="54" width="10" height="60" rx="5"/><rect x="232" y="76" width="10" height="16" rx="5"/>
+              </g>
+            </svg>
+          </div>
+          <div class="project-body">
+            <h3>Voice bots and an agriculture language model</h3>
+            <p class="lead">Live farmer conversations in Indian languages, and the plan for a domain SLM.</p>
+            <p class="detail">Multilingual AI calling bots on Pipecat, Sarvam AI speech-to-text and text-to-speech, Claude and Tata SmartFlo, currently an internal proof of concept. Plus the build plan for an agriculture-domain small language model, including an evaluation of Indic foundation models and fine-tuning economics.</p>
+            <div class="mchips"><span class="mchip yellow">Prototype</span></div>
+            <p class="tech">Pipecat, Sarvam AI, Claude, Tata SmartFlo</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Experience</h2>
+      </div>
+      <div class="exp-grid">
+        <ol class="timeline reveal">
+          <li>
+            <span class="when">Aug 2022 to present</span>
+            <h3>Software Engineer, Krishify</h3>
+            <p>Gurugram, India. Own backend, cloud infrastructure and applied AI for the farmer app, operator app and B2B SaaS platform. Lead technical design and mentor a four-engineer backend team.</p>
+          </li>
+          <li>
+            <span class="when">Mar to Jul 2022</span>
+            <h3>Software Engineer Intern, Krishify</h3>
+            <p>Joined the backend team and stayed.</p>
+          </li>
+          <li>
+            <span class="when">2018 to 2022</span>
+            <h3>B.Tech, Computer Science and Engineering</h3>
+            <p>Guru Gobind Singh Indraprastha University, New Delhi. CGPA 8.81/10.</p>
+          </li>
+        </ol>
+        <div class="exp-side">
+          <div class="card reveal">
+            <h3>Enterprise clients on the platform</h3>
+            <p>AVT McCormick, AB InBev, Swiggy and Rallis India (a Tata company), among 10+ tenants.</p>
+          </div>
+          <div class="card reveal">
+            <h3>Legacy upgrade, zero incidents</h3>
+            <p class="big">Python 3.7 to 3.11</p>
+            <p>Django 2.2 to 5.2 and DRF 3.9 to 3.16, about 20% faster requests and roughly 30 end-of-life or CVE-flagged dependencies cleared.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Skills and tools</h2>
+      </div>
+      <div class="skill-groups">
+        <div class="card skill-group reveal">
+          <h3><span class="dot" style="background:var(--g-blue)"></span>Languages and frameworks</h3>
+          <div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Bash</span><span class="chip">Django REST Framework</span><span class="chip">FastAPI</span><span class="chip">React (AI-assisted)</span></div>
+        </div>
+        <div class="card skill-group reveal">
+          <h3><span class="dot" style="background:var(--g-red)"></span>Architecture and data</h3>
+          <div class="chips"><span class="chip">Multi-tenant SaaS</span><span class="chip">System design</span><span class="chip">REST APIs</span><span class="chip">Microservices</span><span class="chip">PostgreSQL</span><span class="chip">Redis</span><span class="chip">Celery</span><span class="chip">Elasticsearch</span><span class="chip">BigQuery</span><span class="chip">Google Earth Engine</span></div>
+        </div>
+        <div class="card skill-group reveal">
+          <h3><span class="dot" style="background:var(--g-green)"></span>Cloud and DevOps</h3>
+          <div class="chips"><span class="chip">GKE</span><span class="chip">Cloud SQL</span><span class="chip">IAM</span><span class="chip">Cloud Armor</span><span class="chip">AWS EKS</span><span class="chip">AWS RDS</span><span class="chip">Terraform</span><span class="chip">Kubernetes</span><span class="chip">Docker</span><span class="chip">Bitbucket Pipelines</span><span class="chip">ArgoCD</span><span class="chip">ingress-nginx</span><span class="chip">cert-manager</span><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Cloud Monitoring</span></div>
+        </div>
+        <div class="card skill-group reveal">
+          <h3><span class="dot" style="background:var(--g-yellow)"></span>AI and LLMs</h3>
+          <div class="chips"><span class="chip">Claude API</span><span class="chip">Pydantic AI</span><span class="chip">Agent evaluation</span><span class="chip">RAG</span><span class="chip">Pipecat</span><span class="chip">Sarvam AI</span><span class="chip">Tata SmartFlo</span><span class="chip">Claude Code</span><span class="chip">Multi-model agentic workflows</span></div>
+        </div>
+        <div class="card skill-group reveal">
+          <h3><span class="dot" style="background:var(--g-red)"></span>Security</h3>
+          <div class="chips"><span class="chip">CrowdStrike Falcon</span><span class="chip">TLS/PKI</span><span class="chip">JWT</span><span class="chip">SSO</span><span class="chip">HMAC</span><span class="chip">Google Play Integrity</span><span class="chip">Least-privilege IAM</span><span class="chip">Certificate pinning</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-card reveal">
+        <div>
+          <h2>Let's talk.</h2>
+          <p>Email is the fastest way to reach me. I'm in New Delhi, on Indian Standard Time, and I reply within a day.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-filled" href="mailto:rohitxofficial@gmail.com"><svg class="icon"><use href="#i-mail"/></svg>rohitxofficial@gmail.com</a>
+          <a class="btn btn-outlined" href="https://linkedin.com/in/rohittpanchal"><svg class="icon"><use href="#i-open"/></svg>LinkedIn</a>
+          <a class="btn btn-outlined" href="resume.pdf"><svg class="icon"><use href="#i-download"/></svg>Résumé</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <span><span class="stripe" aria-hidden="true"><span style="background:var(--g-blue)"></span><span style="background:var(--g-red)"></span><span style="background:var(--g-yellow)"></span><span style="background:var(--g-green)"></span></span>© 2026 Rohit Panchal</span>
+    <span><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Theme toggle
+  var toggle = document.getElementById('themeToggle');
+  toggle.addEventListener('click', function () {
+    var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+
+  // Mobile menu
+  var menuBtn = document.getElementById('menuBtn'), nav = document.getElementById('nav');
+  menuBtn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  nav.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') { nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); }
+  });
+
+  // App bar shadow on scroll
+  var appbar = document.getElementById('appbar');
+  function onScroll() { appbar.classList.toggle('scrolled', window.scrollY > 4); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Reveal on scroll
+  var reveals = [].slice.call(document.querySelectorAll('.reveal'));
+  if (reduce || !('IntersectionObserver' in window)) {
+    reveals.forEach(function (el) { el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    reveals.forEach(function (el) { io.observe(el); });
+  }
+
+  // Hero metrics: staggered entrance, counters, gauge
+  var metrics = [].slice.call(document.querySelectorAll('.metric'));
+  var counters = [].slice.call(document.querySelectorAll('[data-count]'));
+  var arc = document.getElementById('arc');
+  var CIRC = 188.5;
+  function fmt(el, val) {
+    var d = +el.getAttribute('data-decimals') || 0;
+    el.textContent = (el.getAttribute('data-prefix') || '') + val.toFixed(d) + (el.getAttribute('data-suffix') || '');
+  }
+  function easeOut(x) { return 1 - Math.pow(1 - x, 3); }
+  function runCounters() {
+    var t0 = null, DUR = 1400;
+    function step(now) {
+      if (t0 === null) t0 = now;
+      var p = Math.min(1, (now - t0) / DUR), e = easeOut(p);
+      counters.forEach(function (el) { fmt(el, +el.getAttribute('data-count') * e); });
+      if (arc) arc.setAttribute('stroke-dashoffset', String(CIRC * (1 - 0.999 * e)));
+      if (p < 1) window.requestAnimationFrame(step);
+    }
+    window.requestAnimationFrame(step);
+  }
+  if (reduce || !window.requestAnimationFrame) {
+    metrics.forEach(function (m) { m.classList.add('in'); });
+    counters.forEach(function (el) { fmt(el, +el.getAttribute('data-count')); });
+    if (arc) arc.setAttribute('stroke-dashoffset', String(CIRC * 0.001));
+  } else {
+    metrics.forEach(function (m, i) { setTimeout(function () { m.classList.add('in'); }, 120 + i * 110); });
+    setTimeout(runCounters, 250);
+  }
+
+  // Site search
+  var INDEX = [
+    { label: 'Ceres, the natural-language analytics agent', kind: 'Project', href: '#p-ceres', keys: 'ceres llm agent analytics pydantic fastapi chat claude eval nlp ai' },
+    { label: 'Multi-tenant SaaS platform', kind: 'Project', href: '#p-tenant', keys: 'tenant tenants saas onboarding enterprise swiggy inbev mccormick rallis tata routing isolation b2b' },
+    { label: 'Google Cloud platform and 62.5% cost reduction', kind: 'Project', href: '#p-gcp', keys: 'gcp google cloud cost costs spend terraform gke cloud sql argocd pipelines bitbucket migration aws azure 62.5 infrastructure devops savings' },
+    { label: 'Reliability and performance', kind: 'Project', href: '#p-reliability', keys: 'availability 99.9 latency p95 autoscaling spikes redis postgres postgresql django python migration uptime performance scale' },
+    { label: 'Security engineering', kind: 'Project', href: '#p-security', keys: 'crowdstrike falcon security certificate pinning tls hmac play integrity cloud armor waf iso 27001 hardening' },
+    { label: 'Recommendations and satellite crop insights', kind: 'Project', href: '#p-ml', keys: 'ndvi ndwi lai satellite earth engine harvest recommendation feed personas farmwise ml machine learning ab test click-through' },
+    { label: 'Voice bots and agriculture language model', kind: 'Project', href: '#p-voice', keys: 'voice bot bots calling pipecat sarvam smartflo slm language model indic hindi speech tts stt prototype' },
+    { label: 'About Rohit', kind: 'Section', href: '#about', keys: 'about who is rohit backend cloud ai security team' },
+    { label: 'Experience', kind: 'Section', href: '#experience', keys: 'experience krishify job intern internship education btech ggsipu university timeline' },
+    { label: 'Skills and tools', kind: 'Section', href: '#skills', keys: 'skills tools stack python sql django fastapi react postgres redis celery kubernetes terraform docker prometheus grafana claude pydantic elasticsearch bigquery' },
+    { label: 'Contact', kind: 'Section', href: '#contact', keys: 'contact email linkedin hire reach talk' },
+    { label: 'Résumé (PDF)', kind: 'File', href: 'resume.pdf', keys: 'resume résumé cv pdf download' }
+  ];
+  var ICONS = { Project: '#i-tag', Section: '#i-doc', File: '#i-download' };
+  var form = document.getElementById('search'), input = document.getElementById('q'), list = document.getElementById('results');
+  var results = [], selected = -1;
+
+  function match(q) {
+    var toks = q.toLowerCase().split(/\s+/).filter(Boolean);
+    if (!toks.length) return [];
+    var scored = INDEX.map(function (it) {
+      var hay = (it.label + ' ' + it.keys).toLowerCase(), hits = 0;
+      toks.forEach(function (t) { if (hay.indexOf(t) !== -1) hits++; });
+      return { it: it, hits: hits, all: hits === toks.length };
+    }).filter(function (r) { return r.hits > 0; });
+    scored.sort(function (a, b) { return (b.all - a.all) || (b.hits - a.hits); });
+    return scored.slice(0, 6).map(function (r) { return r.it; });
+  }
+  function render() {
+    list.innerHTML = '';
+    if (!results.length) {
+      var li = document.createElement('li'); li.className = 'empty';
+      li.textContent = input.value.trim() ? 'No matches. Try "ceres", "cloud cost" or "security".' : '';
+      if (li.textContent) list.appendChild(li);
+    }
+    results.forEach(function (it, i) {
+      var li = document.createElement('li'); li.setAttribute('role', 'option'); li.id = 'opt-' + i;
+      li.setAttribute('aria-selected', i === selected ? 'true' : 'false');
+      var a = document.createElement('a'); a.href = it.href;
+      a.innerHTML = '<svg class="icon" aria-hidden="true"><use href="' + ICONS[it.kind] + '"/></svg><span></span><span class="kind"></span>';
+      a.children[1].textContent = it.label; a.children[2].textContent = it.kind;
+      a.addEventListener('click', function (e) { if (it.href.charAt(0) === '#') { e.preventDefault(); go(it.href); } });
+      li.appendChild(a); list.appendChild(li);
+    });
+    var open = list.children.length > 0;
+    form.classList.toggle('open', open);
+    input.setAttribute('aria-expanded', open ? 'true' : 'false');
+    input.setAttribute('aria-activedescendant', selected >= 0 ? 'opt-' + selected : '');
+  }
+  function close() {
+    results = []; selected = -1; list.innerHTML = '';
+    form.classList.remove('open'); input.setAttribute('aria-expanded', 'false'); input.setAttribute('aria-activedescendant', '');
+  }
+  function go(href) {
+    close();
+    var target = document.querySelector(href);
+    if (!target) return;
+    target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+    target.classList.remove('flash'); void target.offsetWidth; target.classList.add('flash');
+    if (target.getAttribute('tabindex') === null) target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: true });
+  }
+  input.addEventListener('input', function () { results = match(input.value); selected = -1; render(); });
+  input.addEventListener('focus', function () { if (input.value.trim()) { results = match(input.value); render(); } });
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowDown' && results.length) { e.preventDefault(); selected = (selected + 1) % results.length; render(); }
+    else if (e.key === 'ArrowUp' && results.length) { e.preventDefault(); selected = (selected - 1 + results.length) % results.length; render(); }
+    else if (e.key === 'Escape') { close(); }
+  });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!results.length) results = match(input.value);
+    var pick = results[selected >= 0 ? selected : 0];
+    if (!pick) { render(); return; }
+    if (pick.href.charAt(0) === '#') go(pick.href); else window.location.href = pick.href;
+  });
+  document.addEventListener('click', function (e) { if (!form.contains(e.target)) close(); });
+  [].slice.call(form.querySelectorAll('[data-q]')).forEach(function (b) {
+    b.addEventListener('click', function () { input.value = b.getAttribute('data-q'); input.focus(); results = match(input.value); selected = -1; render(); });
+  });
+
+  // Typewriter placeholder while the box is idle
+  if (!reduce) {
+    var Q = ['how did rohit cut cloud costs 62.5%', 'what is ceres', 'multi-tenant saas architecture', 'certificate pinning on android', 'ndvi harvest prediction', 'gke autoscaling for seasonal spikes'];
+    var qi = 0, ci = 0, typing = true, timer = null;
+    function idle() { return document.activeElement !== input && !input.value; }
+    function tick() {
+      if (!idle()) { input.placeholder = 'Search my work'; timer = setTimeout(tick, 600); return; }
+      var s = Q[qi];
+      if (typing) {
+        ci++; input.placeholder = s.slice(0, ci);
+        if (ci >= s.length) { typing = false; timer = setTimeout(tick, 1800); return; }
+        timer = setTimeout(tick, 55);
+      } else {
+        ci--; input.placeholder = s.slice(0, ci);
+        if (ci <= 0) { typing = true; qi = (qi + 1) % Q.length; timer = setTimeout(tick, 400); return; }
+        timer = setTimeout(tick, 28);
+      }
+    }
+    timer = setTimeout(tick, 1200);
+  }
+})();
+</script>
+</body>
+</html>
