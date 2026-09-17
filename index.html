@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rohit Panchal – Software Engineer</title>
+<title>Rohit Panchal | Backend, Cloud &amp; Applied AI</title>
 <meta name="description" content="Rohit Panchal is a software engineer at Krishify building the backend, Google Cloud infrastructure and production AI behind an agritech platform used by 9M+ farmers.">
 <link rel="canonical" href="https://rohitpanchal.com/">
 <meta name="theme-color" content="#ffffff">
@@ -11,7 +11,12 @@
 <meta property="og:title" content="Rohit Panchal – Software Engineer">
 <meta property="og:description" content="Backend architecture, Google Cloud infrastructure and production AI for an agritech platform used by 9M+ farmers.">
 <meta property="og:url" content="https://rohitpanchal.com/">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://rohitpanchal.com/social-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rohit Panchal — Software Engineer. Backend, cloud and applied AI for a platform serving 9M+ farmers.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rohitpanchal.com/social-preview.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231A73E8'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial,sans-serif' font-size='36' font-weight='700' fill='%23fff'%3ER%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,27 +42,27 @@
   "worksFor": {"@type": "Organization", "name": "Krishify"},
   "email": "mailto:rohitxofficial@gmail.com",
   "url": "https://rohitpanchal.com/",
-  "sameAs": ["https://linkedin.com/in/rohittpanchal"],
+  "sameAs": ["https://www.linkedin.com/in/rohittpanchal/"],
   "address": {"@type": "PostalAddress", "addressLocality": "New Delhi", "addressCountry": "IN"},
   "alumniOf": {"@type": "CollegeOrUniversity", "name": "Guru Gobind Singh Indraprastha University"}
 }
 </script>
 <style>
 :root {
-  --font: "Google Sans", "Product Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font: Roboto, "Helvetica Neue", Arial, sans-serif;
   --bg: #FFFFFF;
   --bg-2: #F8F9FA;
   --surface: #FFFFFF;
   --surface-2: #F1F3F4;
   --text: #202124;
   --text-2: #5F6368;
-  --text-3: #80868B;
+  --text-3: #687078;
   --border: #DADCE0;
   --blue: #1A73E8;
   --blue-strong: #1967D2;
   --blue-50: #E8F0FE;
   --blue-100: #D2E3FC;
-  --green: #1E8E3E;
+  --green: #137333;
   --green-50: #E6F4EA;
   --red: #D93025;
   --red-50: #FCE8E6;
@@ -81,8 +86,8 @@
   --surface: #303134;
   --surface-2: #3C4043;
   --text: #E8EAED;
-  --text-2: #9AA0A6;
-  --text-3: #80868B;
+  --text-2: #BDC1C6;
+  --text-3: #A6ABB1;
   --border: #5F6368;
   --blue: #8AB4F8;
   --blue-strong: #AECBFA;
@@ -101,7 +106,8 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 84px; }
+[id] { scroll-margin-top: 84px; }
 body {
   margin: 0;
   font-family: var(--font);
@@ -185,7 +191,7 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
 .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
 [data-theme="dark"] .card { border-color: transparent; }
-.metric { padding: 1.25rem 1.25rem 1.1rem; display: flex; flex-direction: column; gap: .35rem; min-height: 150px; opacity: 0; transform: translateY(14px); }
+.metric { padding: 1.25rem 1.25rem 1.1rem; display: flex; flex-direction: column; gap: .35rem; min-height: 150px; opacity: 1; }
 .metric.in { opacity: 1; transform: none; transition: opacity .6s var(--ease), transform .6s var(--ease); }
 .metric .l { font-size: .9rem; color: var(--text-2); }
 .metric .v { font-size: 2rem; font-weight: 500; letter-spacing: -0.02em; line-height: 1.1; }
@@ -207,8 +213,9 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
 .section-head { max-width: 46rem; margin-bottom: 2.5rem; }
 .section-head h2 { font-size: clamp(1.9rem, 3.6vw, 2.5rem); font-weight: 400; letter-spacing: -0.015em; }
 .section-head p { margin-top: .85rem; font-size: 1.1rem; color: var(--text-2); }
-.reveal { opacity: 0; transform: translateY(16px); transition: opacity .55s var(--ease), transform .55s var(--ease); }
-.reveal.in { opacity: 1; transform: none; }
+.reveal { opacity: 1; }
+.motion-ready .reveal { opacity: 0; transform: translateY(16px); transition: opacity .55s var(--ease), transform .55s var(--ease); }
+.motion-ready .reveal.in { opacity: 1; transform: none; }
 .no-js .reveal, .no-js .metric { opacity: 1; transform: none; }
 
 /* About */
@@ -223,7 +230,7 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
 .pillar p { color: var(--text-2); }
 
 /* Projects */
-.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; }
+.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1.25rem; }
 .project { display: flex; flex-direction: column; overflow: hidden; transition: box-shadow .2s var(--ease), transform .2s var(--ease); }
 .project:hover { box-shadow: var(--shadow-2); transform: translateY(-2px); }
 .project-art { height: 168px; display: grid; place-items: center; overflow: hidden; }
@@ -240,7 +247,7 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
 .mchips { display: flex; flex-wrap: wrap; gap: .5rem; }
 .mchip { display: inline-flex; align-items: center; font-size: .85rem; font-weight: 500; padding: .3rem .7rem; border-radius: 8px; background: var(--green-50); color: var(--green); }
 .mchip.blue { background: var(--blue-50); color: var(--blue-strong); }
-.mchip.yellow { background: var(--yellow-50); color: #B06000; }
+.mchip.yellow { background: var(--yellow-50); color: #8A4B00; }
 [data-theme="dark"] .mchip.yellow { color: var(--yellow); }
 .project .tech { margin-top: auto; padding-top: .5rem; font-size: .88rem; color: var(--text-3); }
 
@@ -271,7 +278,7 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
 .exp-side .big { font-size: 2rem; font-weight: 500; letter-spacing: -0.02em; margin-top: .25rem; }
 
 /* Skills */
-.skill-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; align-items: start; }
+.skill-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1.25rem; align-items: start; }
 .skill-group { padding: 1.5rem; }
 .skill-group h3 { font-size: 1.05rem; margin-bottom: .85rem; display: flex; align-items: center; gap: .6rem; }
 .skill-group h3 .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
@@ -283,8 +290,8 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
 .contact-card { background: var(--blue-50); border-radius: var(--radius-lg); padding: 3rem; display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center; }
 .contact-card h2 { font-size: clamp(1.9rem, 3.6vw, 2.5rem); font-weight: 400; letter-spacing: -0.015em; }
 .contact-card p { margin-top: .85rem; color: var(--text-2); font-size: 1.1rem; max-width: 30rem; }
-.contact-actions { display: grid; gap: .75rem; max-width: 22rem; margin-left: auto; }
-.contact-actions .btn { justify-content: center; }
+.contact-actions { min-width: 0; display: grid; gap: .75rem; max-width: 22rem; margin-left: auto; }
+.contact-actions .btn { justify-content: center; max-width: 100%; }
 [data-theme="dark"] .contact-card .btn-outlined { border-color: var(--border); }
 
 /* Footer */
@@ -305,6 +312,7 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
 }
 @media (max-width: 52em) {
   .nav ul { display: none; position: absolute; top: 64px; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--surface); padding: .5rem .75rem 1rem; box-shadow: var(--shadow-2); }
+  .nav { margin-left: 0; }
   .nav.open ul { display: flex; }
   .nav a { display: block; padding: .8rem 1rem; border-radius: 12px; font-size: 1.05rem; }
   .menu-btn { display: inline-grid; }
@@ -317,9 +325,24 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
   .hero-actions .btn { flex: 1; justify-content: center; }
   .search-go { display: none; }
 }
+@media (max-width: 30em) {
+  .container { padding-left: 1.1rem; padding-right: 1.1rem; }
+  .contact-card { padding: 1.5rem 1.1rem; }
+  .contact-actions .btn { font-size: .82rem; padding: 0 .8rem; }
+  .search-results .kind { display: none; }
+}
+.no-js .search, .no-js #themeToggle, .no-js #menuBtn { display: none; }
+@media (max-width: 52em) {
+  .no-js .appbar { position: relative; }
+  .no-js .appbar-inner { flex-wrap: wrap; height: auto; padding-top: 1rem; padding-bottom: 1rem; }
+  .no-js .nav { order: 2; margin-left: 0; width: 100%; }
+  .no-js .nav ul { display: flex; position: static; flex-direction: row; flex-wrap: wrap; box-shadow: none; padding: 0; }
+  .no-js .nav a { padding: .5rem .65rem; }
+}
+.search-results { max-height: min(360px, 60vh); overflow-y: auto; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal, .metric { opacity: 1; transform: none; transition: none; }
+  .reveal, .motion-ready .reveal, .metric { opacity: 1; transform: none; transition: none; }
   .project, .btn, .search-box, body { transition: none; }
   .project:hover { transform: none; }
   .flash { animation: none; box-shadow: 0 0 0 3px var(--blue); }
@@ -359,12 +382,12 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
     </nav>
     <div class="appbar-actions">
       <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch colour theme">
-        <svg class="icon ico-moon"><use href="#i-moon"/></svg>
-        <svg class="icon ico-sun"><use href="#i-sun"/></svg>
+        <svg class="icon ico-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="icon ico-sun" aria-hidden="true"><use href="#i-sun"/></svg>
       </button>
       <a class="btn btn-filled" href="mailto:rohitxofficial@gmail.com">Get in touch</a>
       <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
-        <svg class="icon"><use href="#i-menu"/></svg>
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
       </button>
     </div>
   </div>
@@ -379,18 +402,19 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
         <h1><span class="hi">Hi, I'm Rohit.</span>I build the systems behind an agritech platform used by 9M+ farmers.</h1>
         <p class="hero-sub">Software engineer at Krishify. Backend architecture, Google Cloud infrastructure and production AI, shipped for enterprise clients across India.</p>
         <div class="hero-actions">
-          <a class="btn btn-filled" href="mailto:rohitxofficial@gmail.com"><svg class="icon"><use href="#i-mail"/></svg>Get in touch</a>
-          <a class="btn btn-tonal" href="resume.pdf"><svg class="icon"><use href="#i-download"/></svg>Download résumé</a>
+          <a class="btn btn-filled" href="mailto:rohitxofficial@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Get in touch</a>
+          <a class="btn btn-tonal" href="resume.pdf" download="Rohit_Panchal_Resume.pdf"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download résumé</a>
         </div>
 
         <form class="search" id="search" role="search" autocomplete="off">
           <label class="visually-hidden" for="q">Search this site</label>
           <div class="search-box">
             <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
-            <input id="q" type="search" placeholder="Search my work" aria-autocomplete="list" aria-controls="results" aria-expanded="false">
+            <input id="q" type="search" role="combobox" placeholder="Search my work" aria-autocomplete="list" aria-controls="results" aria-expanded="false">
             <button class="search-go" type="submit">Search</button>
           </div>
           <ul class="search-results" id="results" role="listbox" aria-label="Results"></ul>
+          <p id="searchStatus" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></p>
           <p class="search-hint">Try <button type="button" data-q="ceres">ceres</button>, <button type="button" data-q="cloud cost">cloud cost</button> or <button type="button" data-q="security">security</button></p>
         </form>
       </div>
@@ -399,30 +423,30 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
         <div class="metrics">
           <div class="card metric" id="m1">
             <span class="l">Monthly cloud spend</span>
-            <span class="v green"><span data-count="62.5" data-decimals="1" data-prefix="−" data-suffix="%">−0%</span></span>
-            <svg class="viz" viewBox="0 0 200 44" preserveAspectRatio="none" aria-hidden="true">
-              <g fill="var(--g-blue)" opacity=".9">
-                <rect x="2" y="2" width="12" height="42" rx="2"/><rect x="18" y="4" width="12" height="40" rx="2"/><rect x="34" y="3" width="12" height="41" rx="2"/><rect x="50" y="8" width="12" height="36" rx="2"/><rect x="66" y="14" width="12" height="30" rx="2"/><rect x="82" y="19" width="12" height="25" rx="2"/><rect x="98" y="24" width="12" height="20" rx="2"/><rect x="114" y="27" width="12" height="17" rx="2"/><rect x="130" y="28" width="12" height="16" rx="2"/><rect x="146" y="27" width="12" height="17" rx="2"/><rect x="162" y="28" width="12" height="16" rx="2"/><rect x="178" y="27" width="12" height="17" rx="2"/>
-              </g>
+            <span class="v green"><span data-count="62.5" data-decimals="1" data-prefix="−" data-suffix="%">−62.5%</span></span>
+            <svg class="viz" viewBox="0 0 200 44" aria-hidden="true">
+              <rect x="0" y="4" width="200" height="12" rx="3" fill="var(--g-blue)" opacity=".4"/>
+              <rect x="0" y="27" width="75" height="12" rx="3" fill="var(--green)"/>
             </svg>
-            <span class="c">INR 12L to 4.5L a month, about $100K a year</span>
+            <span class="c">₹12 lakh → ₹4.5 lakh/month; ₹90 lakh annualized savings</span>
           </div>
           <div class="card metric ring" id="m2">
             <div class="txt">
               <span class="l">Availability</span>
-              <span class="v"><span data-count="99.9" data-decimals="1" data-suffix="%">0%</span></span>
-              <span class="c">Past 12 months, through 5× seasonal spikes</span>
+              <span class="v"><span data-count="99.9" data-decimals="1" data-suffix="%">99.9%</span></span>
+              <span class="c">12 months to Sep 2026; handled 5× seasonal spikes</span>
             </div>
             <svg class="gauge" viewBox="0 0 72 72" aria-hidden="true">
               <circle class="track" cx="36" cy="36" r="30"/>
-              <circle class="arc" id="arc" cx="36" cy="36" r="30" stroke-dasharray="188.5" stroke-dashoffset="188.5"/>
+              <circle class="arc" id="arc" cx="36" cy="36" r="30" stroke-dasharray="188.5" stroke-dashoffset="0.1885"/>
             </svg>
           </div>
           <div class="card metric" id="m3">
             <span class="l">p95 API latency</span>
-            <span class="v"><span data-count="800" data-decimals="0">0</span> <small>ms, from 1.6 s</small></span>
-            <svg class="viz" viewBox="0 0 200 44" preserveAspectRatio="none" aria-hidden="true">
-              <polyline fill="none" stroke="var(--g-red)" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" points="2,6 20,9 38,7 56,12 74,10 92,22 110,30 128,34 146,33 164,35 182,34 198,35"/>
+            <span class="v"><span data-count="800" data-decimals="0">800</span> <small>ms, from 1.6 s</small></span>
+            <svg class="viz" viewBox="0 0 200 44" aria-hidden="true">
+              <rect x="0" y="4" width="200" height="12" rx="3" fill="var(--g-red)" opacity=".4"/>
+              <rect x="0" y="27" width="100" height="12" rx="3" fill="var(--g-blue)"/>
             </svg>
             <span class="c">Query plans, indexing, pooling and Redis caching</span>
           </div>
@@ -445,26 +469,26 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
     <div class="container">
       <div class="section-head reveal">
         <h2>Four years, one platform, the whole stack</h2>
-        <p>I joined Krishify as an intern in 2022 and now own its backend, cloud infrastructure and applied AI, with a four-engineer team I lead the technical design for. The platform serves farmers, field operators and enterprise agri-businesses, so the work spans everything from Postgres query plans to LLM evals.</p>
+        <p>I joined Krishify as an intern in 2022 and now own its backend, cloud infrastructure and applied AI, leading technical design and mentoring a four-engineer backend team. The platform serves farmers, field operators and enterprise agri-businesses, so the work spans everything from Postgres query plans to LLM evals.</p>
       </div>
       <div class="pillars">
         <div class="card pillar reveal">
-          <span class="badge blue"><svg class="icon"><use href="#i-hub"/></svg></span>
+          <span class="badge blue"><svg class="icon" aria-hidden="true"><use href="#i-hub"/></svg></span>
           <h3>Backend architecture</h3>
           <p>APIs, schemas and services behind the farmer app, operator app and a multi-tenant B2B platform handling around 10M requests a day.</p>
         </div>
         <div class="card pillar reveal">
-          <span class="badge green"><svg class="icon"><use href="#i-cloud"/></svg></span>
+          <span class="badge green"><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg></span>
           <h3>Google Cloud and DevOps</h3>
           <p>Built the GCP platform from scratch on Terraform: GKE, Cloud SQL, ArgoCD GitOps and self-service pipelines with under 10-minute lead time.</p>
         </div>
         <div class="card pillar reveal">
-          <span class="badge yellow"><svg class="icon"><use href="#i-sparkle"/></svg></span>
+          <span class="badge yellow"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg></span>
           <h3>Applied AI</h3>
-          <p>LLM products in production, from a natural-language analytics agent with its own eval harness to multilingual voice-bot prototypes.</p>
+          <p>Ceres, a production analytics agent with its own evaluation harness, plus internal multilingual voice-bot prototypes.</p>
         </div>
         <div class="card pillar reveal">
-          <span class="badge red"><svg class="icon"><use href="#i-shield"/></svg></span>
+          <span class="badge red"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
           <h3>Security</h3>
           <p>CrowdStrike across the clusters, a hardened Android-to-backend edge, and the infrastructure controls behind ISO 27001 readiness.</p>
         </div>
@@ -477,7 +501,7 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
     <div class="container">
       <div class="section-head reveal">
         <h2>Things I've built</h2>
-        <p>Production systems, with the numbers they moved.</p>
+        <p>Production systems, measurable outcomes, and the prototypes I’m exploring next.</p>
       </div>
       <div class="projects">
 
@@ -494,8 +518,8 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
           <div class="project-body">
             <h3>Ceres</h3>
             <p class="lead">A natural-language analytics agent over production farm data.</p>
-            <p class="detail">Client teams ask questions in plain English instead of waiting on a dashboard. Streaming FastAPI and Pydantic AI backend, React chat UI, a provider-agnostic LLM layer, and a 150-case regression-eval harness that runs on every change.</p>
-            <div class="mchips"><span class="mchip">~92% query accuracy</span><span class="mchip blue">2 enterprise clients</span><span class="mchip blue">~120 weekly users</span></div>
+            <p class="detail">Client teams ask questions in plain English instead of waiting on a dashboard. Streaming FastAPI and Pydantic AI backend, React chat UI, a provider-agnostic LLM layer, and a 150-case regression evaluation harness for checking answer quality as the agent evolves.</p>
+            <div class="mchips"><span class="mchip">~92% accuracy on 150 eval cases</span><span class="mchip blue">2 enterprise clients</span><span class="mchip blue">~120 weekly users</span></div>
             <p class="tech">FastAPI, Pydantic AI, React, Claude API, PostgreSQL</p>
           </div>
         </article>
@@ -535,8 +559,8 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
           <div class="project-body">
             <h3>Google Cloud platform and cost reduction</h3>
             <p class="lead">Infrastructure from scratch, then 62.5% cheaper.</p>
-            <p class="detail">A multi-project, multi-region Terraform monorepo provisioning GKE and Cloud SQL. Consolidated the AWS, Azure and GCP estates onto GCP, retired 7 redundant services, rightsized everything, and rebuilt the BigQuery-to-RDS pipelines.</p>
-            <div class="mchips"><span class="mchip">INR 12L to 4.5L a month</span><span class="mchip blue">Under 10-min deploy lead time</span></div>
+            <p class="detail">A multi-project, multi-region Terraform monorepo provisioning GKE and Cloud SQL. Consolidated the AWS, Azure and GCP estates onto GCP, retired 7 redundant services, rightsized GKE node pools and Cloud SQL, and rebuilt the BigQuery-to-RDS pipelines.</p>
+            <div class="mchips"><span class="mchip">₹12 lakh → ₹4.5 lakh/month</span><span class="mchip blue">Under 10-min deploy lead time</span></div>
             <p class="tech">Terraform, GKE, Cloud SQL, ArgoCD, Bitbucket Pipelines, Cloud Armor</p>
           </div>
         </article>
@@ -572,8 +596,8 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
           <div class="project-body">
             <h3>Security engineering</h3>
             <p class="lead">Runtime protection and a hardened API edge for 9M users.</p>
-            <p class="detail">CrowdStrike Falcon across the GKE clusters with admission control and image assessment at the registry. Android-to-backend hardening: TLS enforcement, certificate pinning that survives cert-manager rotation, Google Play Integrity, HMAC request signing and Cloud Armor WAF.</p>
-            <div class="mchips"><span class="mchip">100% runtime coverage</span><span class="mchip yellow">ISO 27001 readiness</span></div>
+            <p class="detail">CrowdStrike Falcon across the GKE clusters with admission control and image assessment at the registry. Android-to-backend hardening: TLS enforcement, certificate pinning compatible with cert-manager rotation, Google Play Integrity, HMAC request signing and Cloud Armor WAF.</p>
+            <div class="mchips"><span class="mchip">100% of production workloads covered</span><span class="mchip yellow">ISO 27001 readiness</span></div>
             <p class="tech">CrowdStrike Falcon, cert-manager, Cloud Armor, Play Integrity</p>
           </div>
         </article>
@@ -612,10 +636,10 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
             </svg>
           </div>
           <div class="project-body">
-            <h3>Voice bots and an agriculture language model</h3>
-            <p class="lead">Live farmer conversations in Indian languages, and the plan for a domain SLM.</p>
+            <h3>Voice prototypes and language-model planning</h3>
+            <p class="lead">An internal calling-bot POC and a technical plan for an agriculture SLM.</p>
             <p class="detail">Multilingual AI calling bots on Pipecat, Sarvam AI speech-to-text and text-to-speech, Claude and Tata SmartFlo, currently an internal proof of concept. Plus the build plan for an agriculture-domain small language model, including an evaluation of Indic foundation models and fine-tuning economics.</p>
-            <div class="mchips"><span class="mchip yellow">Prototype</span></div>
+            <div class="mchips"><span class="mchip yellow">Voice bots: internal POC</span><span class="mchip blue">SLM: technical plan</span></div>
             <p class="tech">Pipecat, Sarvam AI, Claude, Tata SmartFlo</p>
           </div>
         </article>
@@ -640,7 +664,7 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
           <li>
             <span class="when">Mar to Jul 2022</span>
             <h3>Software Engineer Intern, Krishify</h3>
-            <p>Joined the backend team and stayed.</p>
+            <p>Joined the backend team as an intern; transitioned to Software Engineer in August 2022.</p>
           </li>
           <li>
             <span class="when">2018 to 2022</span>
@@ -680,7 +704,7 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
         </div>
         <div class="card skill-group reveal">
           <h3><span class="dot" style="background:var(--g-green)"></span>Cloud and DevOps</h3>
-          <div class="chips"><span class="chip">GKE</span><span class="chip">Cloud SQL</span><span class="chip">IAM</span><span class="chip">Cloud Armor</span><span class="chip">AWS EKS</span><span class="chip">AWS RDS</span><span class="chip">Terraform</span><span class="chip">Kubernetes</span><span class="chip">Docker</span><span class="chip">Bitbucket Pipelines</span><span class="chip">ArgoCD</span><span class="chip">ingress-nginx</span><span class="chip">cert-manager</span><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Cloud Monitoring</span></div>
+          <div class="chips"><span class="chip">Google Cloud (GCP)</span><span class="chip">GKE</span><span class="chip">Cloud SQL</span><span class="chip">IAM</span><span class="chip">Cloud Armor</span><span class="chip">AWS EKS</span><span class="chip">AWS RDS</span><span class="chip">Terraform</span><span class="chip">Kubernetes</span><span class="chip">Docker</span><span class="chip">Bitbucket Pipelines</span><span class="chip">ArgoCD</span><span class="chip">ingress-nginx</span><span class="chip">cert-manager</span><span class="chip">Prometheus</span><span class="chip">Grafana</span><span class="chip">Cloud Monitoring</span></div>
         </div>
         <div class="card skill-group reveal">
           <h3><span class="dot" style="background:var(--g-yellow)"></span>AI and LLMs</h3>
@@ -700,12 +724,12 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
       <div class="contact-card reveal">
         <div>
           <h2>Let's talk.</h2>
-          <p>Email is the fastest way to reach me. I'm in New Delhi, on Indian Standard Time, and I reply within a day.</p>
+          <p>Email is the fastest way to reach me. Based in New Delhi, India (IST).</p>
         </div>
         <div class="contact-actions">
-          <a class="btn btn-filled" href="mailto:rohitxofficial@gmail.com"><svg class="icon"><use href="#i-mail"/></svg>rohitxofficial@gmail.com</a>
-          <a class="btn btn-outlined" href="https://linkedin.com/in/rohittpanchal"><svg class="icon"><use href="#i-open"/></svg>LinkedIn</a>
-          <a class="btn btn-outlined" href="resume.pdf"><svg class="icon"><use href="#i-download"/></svg>Résumé</a>
+          <a class="btn btn-filled" href="mailto:rohitxofficial@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>rohitxofficial@gmail.com</a>
+          <a class="btn btn-outlined" href="https://www.linkedin.com/in/rohittpanchal/"><svg class="icon" aria-hidden="true"><use href="#i-open"/></svg>LinkedIn</a>
+          <a class="btn btn-outlined" href="resume.pdf" download="Rohit_Panchal_Resume.pdf"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Résumé</a>
         </div>
       </div>
     </div>
@@ -724,24 +748,49 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
 (function () {
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  // Theme toggle
+  // Theme and mobile navigation.
   var toggle = document.getElementById('themeToggle');
+  function themeLabel() {
+    var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+    toggle.setAttribute('aria-label', dark ? 'Switch to light theme' : 'Switch to dark theme');
+    toggle.setAttribute('title', dark ? 'Switch to light theme' : 'Switch to dark theme');
+  }
+  themeLabel();
   toggle.addEventListener('click', function () {
     var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', next);
     try { localStorage.setItem('theme', next); } catch (e) {}
+    themeLabel();
   });
-
-  // Mobile menu
   var menuBtn = document.getElementById('menuBtn'), nav = document.getElementById('nav');
-  menuBtn.addEventListener('click', function () {
-    var open = nav.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  function setMenu(open, restoreFocus) {
+    nav.classList.toggle('open', open);
+    menuBtn.setAttribute('aria-expanded', String(open));
     menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-  });
+    if (restoreFocus) menuBtn.focus();
+  }
+  menuBtn.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
   nav.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') { nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', 'false'); }
+    var link = e.target.closest('a');
+    if (!link) return;
+    var wasOpen = nav.classList.contains('open');
+    setMenu(false);
+    if (wasOpen && link.hash) {
+      var target = document.querySelector(link.hash);
+      if (target) { target.setAttribute('tabindex', '-1'); target.focus({ preventScroll: true }); }
+    }
   });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.classList.contains('open')) setMenu(false, true);
+  });
+  document.addEventListener('click', function (e) {
+    if (!nav.contains(e.target) && !menuBtn.contains(e.target)) setMenu(false);
+  });
+  document.addEventListener('focusin', function (e) {
+    if (!nav.contains(e.target) && !menuBtn.contains(e.target)) setMenu(false);
+  });
+  var smallScreen = window.matchMedia('(max-width: 52em)');
+  if (smallScreen.addEventListener) smallScreen.addEventListener('change', function () { setMenu(false); });
 
   // App bar shadow on scroll
   var appbar = document.getElementById('appbar');
@@ -757,38 +806,11 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    document.documentElement.classList.add('motion-ready');
     reveals.forEach(function (el) { io.observe(el); });
   }
 
-  // Hero metrics: staggered entrance, counters, gauge
-  var metrics = [].slice.call(document.querySelectorAll('.metric'));
-  var counters = [].slice.call(document.querySelectorAll('[data-count]'));
-  var arc = document.getElementById('arc');
-  var CIRC = 188.5;
-  function fmt(el, val) {
-    var d = +el.getAttribute('data-decimals') || 0;
-    el.textContent = (el.getAttribute('data-prefix') || '') + val.toFixed(d) + (el.getAttribute('data-suffix') || '');
-  }
-  function easeOut(x) { return 1 - Math.pow(1 - x, 3); }
-  function runCounters() {
-    var t0 = null, DUR = 1400;
-    function step(now) {
-      if (t0 === null) t0 = now;
-      var p = Math.min(1, (now - t0) / DUR), e = easeOut(p);
-      counters.forEach(function (el) { fmt(el, +el.getAttribute('data-count') * e); });
-      if (arc) arc.setAttribute('stroke-dashoffset', String(CIRC * (1 - 0.999 * e)));
-      if (p < 1) window.requestAnimationFrame(step);
-    }
-    window.requestAnimationFrame(step);
-  }
-  if (reduce || !window.requestAnimationFrame) {
-    metrics.forEach(function (m) { m.classList.add('in'); });
-    counters.forEach(function (el) { fmt(el, +el.getAttribute('data-count')); });
-    if (arc) arc.setAttribute('stroke-dashoffset', String(CIRC * 0.001));
-  } else {
-    metrics.forEach(function (m, i) { setTimeout(function () { m.classList.add('in'); }, 120 + i * 110); });
-    setTimeout(runCounters, 250);
-  }
+  // Metrics are real HTML values, so they remain readable without JavaScript.
 
   // Site search
   var INDEX = [
@@ -798,7 +820,7 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
     { label: 'Reliability and performance', kind: 'Project', href: '#p-reliability', keys: 'availability 99.9 latency p95 autoscaling spikes redis postgres postgresql django python migration uptime performance scale' },
     { label: 'Security engineering', kind: 'Project', href: '#p-security', keys: 'crowdstrike falcon security certificate pinning tls hmac play integrity cloud armor waf iso 27001 hardening' },
     { label: 'Recommendations and satellite crop insights', kind: 'Project', href: '#p-ml', keys: 'ndvi ndwi lai satellite earth engine harvest recommendation feed personas farmwise ml machine learning ab test click-through' },
-    { label: 'Voice bots and agriculture language model', kind: 'Project', href: '#p-voice', keys: 'voice bot bots calling pipecat sarvam smartflo slm language model indic hindi speech tts stt prototype' },
+    { label: 'Voice prototypes and language-model planning', kind: 'Project', href: '#p-voice', keys: 'voice bot bots calling pipecat sarvam smartflo slm language model indic hindi speech tts stt prototype' },
     { label: 'About Rohit', kind: 'Section', href: '#about', keys: 'about who is rohit backend cloud ai security team' },
     { label: 'Experience', kind: 'Section', href: '#experience', keys: 'experience krishify job intern internship education btech ggsipu university timeline' },
     { label: 'Skills and tools', kind: 'Section', href: '#skills', keys: 'skills tools stack python sql django fastapi react postgres redis celery kubernetes terraform docker prometheus grafana claude pydantic elasticsearch bigquery' },
@@ -808,6 +830,7 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
   var ICONS = { Project: '#i-tag', Section: '#i-doc', File: '#i-download' };
   var form = document.getElementById('search'), input = document.getElementById('q'), list = document.getElementById('results');
   var results = [], selected = -1;
+  var status = document.getElementById('searchStatus');
 
   function match(q) {
     var toks = q.toLowerCase().split(/\s+/).filter(Boolean);
@@ -830,7 +853,7 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
     results.forEach(function (it, i) {
       var li = document.createElement('li'); li.setAttribute('role', 'option'); li.id = 'opt-' + i;
       li.setAttribute('aria-selected', i === selected ? 'true' : 'false');
-      var a = document.createElement('a'); a.href = it.href;
+      var a = document.createElement('a'); a.href = it.href; a.tabIndex = -1;
       a.innerHTML = '<svg class="icon" aria-hidden="true"><use href="' + ICONS[it.kind] + '"/></svg><span></span><span class="kind"></span>';
       a.children[1].textContent = it.label; a.children[2].textContent = it.kind;
       a.addEventListener('click', function (e) { if (it.href.charAt(0) === '#') { e.preventDefault(); go(it.href); } });
@@ -839,11 +862,14 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
     var open = list.children.length > 0;
     form.classList.toggle('open', open);
     input.setAttribute('aria-expanded', open ? 'true' : 'false');
-    input.setAttribute('aria-activedescendant', selected >= 0 ? 'opt-' + selected : '');
+    if (selected >= 0) {
+      input.setAttribute('aria-activedescendant', 'opt-' + selected);
+      list.children[selected].scrollIntoView({ block: 'nearest' });
+    } else input.removeAttribute('aria-activedescendant');
   }
   function close() {
     results = []; selected = -1; list.innerHTML = '';
-    form.classList.remove('open'); input.setAttribute('aria-expanded', 'false'); input.setAttribute('aria-activedescendant', '');
+    form.classList.remove('open'); input.setAttribute('aria-expanded', 'false'); input.removeAttribute('aria-activedescendant');
   }
   function go(href) {
     close();
@@ -854,12 +880,15 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
     if (target.getAttribute('tabindex') === null) target.setAttribute('tabindex', '-1');
     target.focus({ preventScroll: true });
   }
-  input.addEventListener('input', function () { results = match(input.value); selected = -1; render(); });
+  input.addEventListener('input', function () {
+    results = match(input.value); selected = -1; render();
+    status.textContent = input.value.trim() ? (results.length ? results.length + ' results. Use the up and down arrow keys, then Enter.' : 'No matches. Try Ceres, cloud cost, or security.') : '';
+  });
   input.addEventListener('focus', function () { if (input.value.trim()) { results = match(input.value); render(); } });
   input.addEventListener('keydown', function (e) {
     if (e.key === 'ArrowDown' && results.length) { e.preventDefault(); selected = (selected + 1) % results.length; render(); }
     else if (e.key === 'ArrowUp' && results.length) { e.preventDefault(); selected = (selected - 1 + results.length) % results.length; render(); }
-    else if (e.key === 'Escape') { close(); }
+    else if (e.key === 'Escape' || e.key === 'Tab') { close(); }
   });
   form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -873,26 +902,7 @@ svg.icon { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-w
     b.addEventListener('click', function () { input.value = b.getAttribute('data-q'); input.focus(); results = match(input.value); selected = -1; render(); });
   });
 
-  // Typewriter placeholder while the box is idle
-  if (!reduce) {
-    var Q = ['how did rohit cut cloud costs 62.5%', 'what is ceres', 'multi-tenant saas architecture', 'certificate pinning on android', 'ndvi harvest prediction', 'gke autoscaling for seasonal spikes'];
-    var qi = 0, ci = 0, typing = true, timer = null;
-    function idle() { return document.activeElement !== input && !input.value; }
-    function tick() {
-      if (!idle()) { input.placeholder = 'Search my work'; timer = setTimeout(tick, 600); return; }
-      var s = Q[qi];
-      if (typing) {
-        ci++; input.placeholder = s.slice(0, ci);
-        if (ci >= s.length) { typing = false; timer = setTimeout(tick, 1800); return; }
-        timer = setTimeout(tick, 55);
-      } else {
-        ci--; input.placeholder = s.slice(0, ci);
-        if (ci <= 0) { typing = true; qi = (qi + 1) % Q.length; timer = setTimeout(tick, 400); return; }
-        timer = setTimeout(tick, 28);
-      }
-    }
-    timer = setTimeout(tick, 1200);
-  }
+  // Keep a stable placeholder; suggested searches are available below the input.
 })();
 </script>
 </body>
